@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marpu</title>
+    <link rel="stylesheet" href="programs.css">
+    <link rel="stylesheet" href="programs.js">
+    <!-- Google Fonts Links For Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+   </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="#">Marpu<span>.</span></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="main_pg.html">Home</a></li>
+          <li><a href="main_pg.html">About us</a></li>
+          <li><a href="mission_1.html">Mission</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="#">Events</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+    <section class="Programs">
+        <div class="div_Progrmas" style="height: 20vh; width: vw; margin: auto; display: flex; align-items: flex-end; justify-content: flex-end;">
+            <h2>Our Events</h2>
+          </div>
+    </section>
+  <body>
+    <div class="container">
+      <div class="slider-wrapper">
+        <button id="prev-slide" class="slide-button material-symbols-rounded">
+          chevron_left
+        </button>
+        <ul class="image-list">
+          <img class="image-item" src="e1.jpg" alt="img-1" />
+          <img class="image-item" src="e2.jpg" alt="img-2" />
+          <img class="image-item" src="e3.jpg" alt="img-3" />
+          <img class="image-item" src="e4.jpg" alt="img-4" />
+          <img class="image-item" src="e5.jpg" alt="img-5" />
+          <img class="image-item" src="e6.jpg" alt="img-6" />
+          <img class="image-item" src="e7.jpg" alt="img-7" />
+        </ul>
+        <button id="next-slide" class="slide-button material-symbols-rounded">
+          chevron_right
+        </button>
+      </div>
+      <div class="slider-scrollbar">
+        <div class="scrollbar-track">
+          <div class="scrollbar-thumb"></div>
+        </div>
+      </div>
+    </div>
+      <footer>
+        <div class="content">
+          <div class="left box">
+            <div class="upper">
+              <div class="topic">About us</div>
+              <p>Successful existing solutions require innovative ideas
+                and volunteerism for unresolved problems.</p>
+            </div>
+            <div class="lower">
+              <div class="topic">Contact us</div>
+              <div class="phone">
+                <a href="#"><i class="fas fa-phone-volume"></i>08645663150</a>
+              </div>
+              <div class="email">
+                <a href="#"><i class="fas fa-envelope"></i>contact@marpu.org</a>
+              </div>
+            </div>
+          </div>
+          <div class="middle box">
+            <div class="topic">Quick Links</div>
+            <div><a href="#">About Marpu</a></div>
+            <div><a href="#">Our Program</a></div>
+            <div><a href="#">Our Team</a></div>
+            <div><a href="#">Our Mission</a></div>
+            <div><a href="#">Partnership</a></div>
+          </div>
+          <div class="right box">
+            <div class="topic">Subscribe us</div>
+            <form action="#">
+              <input type="text" placeholder="Enter email address">
+              <input type="submit" name="" value="Send">
+              <div class="media-icons">
+                <a href="https://www.facebook.com/marpufoundation"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/marpufoundation/"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/marpu_ngo"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/@volunteerism"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/company/marpufoundation/?originalSubdomain=il"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="bottom">
+          <p>Copyright © 2020 <a href="#">Marpu</a> All rights reserved</p>
+        </div>
+      </footer>
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+    
+  </body>
+</html>

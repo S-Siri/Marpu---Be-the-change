@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marpu</title>
+    <link rel="stylesheet" href="main_pg.css">
+    <!-- Google Fonts Links For Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+   </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="#">Marpu<span>.</span></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="mission_1.html">Mission</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="events.html">Events</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <div class="content">
+        <h2><span style="color: rgb(231, 81, 12);">Marpu</span> - Be the Change</h2>
+        <p>
+            CHANGE WITHIN TO CHANGE THE WORLD<br>
+            SUSTAINABLE DEVELOPMENT GOALS | VOLUNTEERING | CREATIVE SOLUTIONS
+        </p>
+        <button>Browse Now</button>
+      </div>
+    </section>
+    <section class="about-us">
+        <div class="about">
+          <img src="logo.png" class="pic">
+          <div class="text">
+            <h2>About Us</h2>
+            <h5>Be the Change <span>Marpu</span></h5>
+              <p>"Marpu" - a synonym for transformation - was established by the respected National Youth Awardee, Mr. Kadiri Raghu Vamsi. At Marpu Foundation, we harness individual potential to bring about positive change in the world. Our focus lies in promoting volunteerism, ecological mindfulness, and sustainable development.</p>
+            <div class="data">
+            <a href="#" class="hire">Donate</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="final_1">
+        <div class="our_final_1" >
+            <img src="final_1.PNG" alt="no" width="100%" height="100%">
+          </div>
+        </div>
+      </section>
+      <section class="theme" style="background-color: #f57846;">
+        <div class="our_theme" style="display:flex; align-items: center; flex-direction: column; justify-content: center; width: 100vw; height: 100vh;">
+            <h2 style="align-content: center; font-size: 3rem;">Our Theme</h2>
+            <img src="theme.PNG" alt="no" width="80%" height="80%">
+          </div>
+        </div>
+      </section>
+      <section class="final_2">
+        <div class="our_final_2" >
+            <img src="final_2.PNG" alt="no" width="100%" height="100%">
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="content">
+          <div class="left box">
+            <div class="upper">
+              <div class="topic">About us</div>
+              <p>Successful existing solutions require innovative ideas
+                and volunteerism for unresolved problems.</p>
+            </div>
+            <div class="lower">
+              <div class="topic">Contact us</div>
+              <div class="phone">
+                <a href="#"><i class="fas fa-phone-volume"></i>08645663150</a>
+              </div>
+              <div class="email">
+                <a href="#"><i class="fas fa-envelope"></i>contact@marpu.org</a>
+              </div>
+            </div>
+          </div>
+          <div class="middle box">
+            <div class="topic">Quick Links</div>
+            <div><a href="#">About Marpu</a></div>
+            <div><a href="#">Our Program</a></div>
+            <div><a href="#">Our Team</a></div>
+            <div><a href="#">Our Mission</a></div>
+            <div><a href="#">Partnership</a></div>
+          </div>
+          <div class="right box">
+            <div class="topic">Subscribe us</div>
+            <form action="#">
+              <input type="text" placeholder="Enter email address">
+              <input type="submit" name="" value="Send">
+              <div class="media-icons">
+                <a href="https://www.facebook.com/marpufoundation"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/marpufoundation/"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/marpu_ngo"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/@volunteerism"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/company/marpufoundation/?originalSubdomain=il"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="bottom">
+          <p>Copyright © 2020 <a href="#">Marpu</a> All rights reserved</p>
+        </div>
+      </footer>
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+    
+  </body>
+</html>
